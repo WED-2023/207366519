@@ -16,12 +16,21 @@ body, ul {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #ecf0f1;
     color: #2c3e50;
+    list-style-type: none;
 }
 
 body {
     background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+#about {
+    background-image: url('utils/main_background2.jpg');
+    background-size: cover;         /* שתמלא את כל השטח */
+       /* שתתמקד במרכז התמונה */
+    background-repeat: no-repeat;   /* שלא תחזור על עצמה */
+    background-attachment: fixed;   /* תישאר במקום כשגוללים (אופציונלי) */
+    color: white;                   /* שיהיה קונטרסט לטקסט – בהתאם לתמונה */
+    padding: 50px 20px;             /* ריווח פנימי יפה */
 }
 
 #menu li {
@@ -108,3 +117,120 @@ html {
 .gallery img:hover {
     transform: scale(1.05);
 }
+
+
+.qr-code:hover {
+    transform: scale(1.2) rotate(1deg);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+#contact {
+    position: relative;
+    margin: 0 auto;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: 0;
+    margin: 1em 40px;
+    width: 300px;
+    padding: 10px;
+    border-bottom: 2px solid #3333ff;
+    background: none;
+    font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+    display: block;
+    color: #3333ff;
+}
+
+textarea{
+    border: 0;
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin-left: 40px;
+    background: none;
+    padding: 10px;
+    font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+    border-bottom: 2px solid #3333ff;
+    color: #3333ff;
+    margin-bottom:15px;
+}
+
+
+#submit{
+    border: 2px solid #252525;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 1.2em 2em;
+    color: #212121;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: ease all .3s;
+}
+#submit:hover{
+    background: #3333ff; color: #fff; border: #3333ff solid 2px;
+}
+
+
+
+.rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating label img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.rating input:checked + label img {
+    transform: scale(1.5);
+}
+
+#spa {
+    direction: rtl;
+    font-family: 'Arial', sans-serif;
+    padding: 2em;
+    line-height: 1.8;
+  }
+  
+  #spa h2 {
+    color: #3333ff;
+    padding-bottom: 0.4em;
+    margin-top: 1.5em;
+  }
+  
+   p {
+    
+    border-right: 5px solid #3333ff;
+    padding: 1em 1.5em;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  #spa p::first-line {
+    font-weight: bold;
+    color: #222;
+  }
+  
+
