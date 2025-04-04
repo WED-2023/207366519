@@ -57,14 +57,6 @@ body {
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-/* 
-#about { background: linear-gradient(135deg, #f9f9f9, #dfe6e9); }
-#photos { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
-#playlist { background: linear-gradient(135deg, #d1f2eb, #a3e4d7); }
-#like { background: linear-gradient(135deg, #fdebd0, #f8c471); }
-#qrcoder { background: linear-gradient(135deg, #f5b7b1, #e74c3c); }
-#spa { background: linear-gradient(135deg, #d7bde2, #af7ac5); }
-#contact { background: linear-gradient(135deg, #f9e79f, #f4d03f); } */
 
 .section:first-of-type {
     margin-top: 80px;
