@@ -1,7 +1,116 @@
-#menu
-{
+
+
+#menu {
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #3498db, #59b699);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+
+
+#menu li {
+    display: inline;
+    margin: 0 15px;
+    list-style: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+#menu a:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+}
+
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 3px solid #3498db;
+    transition: all 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#about { background: linear-gradient(135deg, #f9f9f9, #dfe6e9); }
+#photos { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
+#playlist { background: linear-gradient(135deg, #d1f2eb, #a3e4d7); }
+#like { background: linear-gradient(135deg, #fdebd0, #f8c471); }
+#qrcoder { background: linear-gradient(135deg, #f5b7b1, #e74c3c); }
+#spa { background: linear-gradient(135deg, #d7bde2, #af7ac5); }
+#contact { background: linear-gradient(135deg, #f9e79f, #f4d03f); }
+
+.section:first-of-type {
+    margin-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#menu a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#menu a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #f1c40f;
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+#menu a:hover::after {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Image Styling */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
