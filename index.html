@@ -59,10 +59,6 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/xB-BHUvWgjk?si=vaWWNTO1aW8gmoAZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/nBk1QTE_CAY?si=2OPjVWfeTl5C64gb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   <iframe width="560" height="315" src="https://www.youtube.com/embed/6jN_8mp-g78?si=7QLUZtEv-7VRBuUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<section id="like" class="section">
-  <!-- Your like button code -->
-  <h2>! פרגנו לי בלייק</h2>
-  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
 </section>
 
 <section id="qrcoder" class="section">
@@ -134,21 +130,27 @@ contact me
 <br/>
 </section>
 
+<section id="like" class="section">
+  <!-- Your like button code -->
+  <h2>! פרגנו לי בלייק</h2>
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
+</section>
+
+</body>
 
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
   });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
-</body>
+  </script>
+  <script type="text/javascript">
+   $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+   });​
+   </script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
 </html>
