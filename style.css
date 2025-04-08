@@ -192,15 +192,6 @@ textarea{
     cursor: pointer;
 }
 
-.rating label img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s ease-in-out;
-}
-
-.rating input:checked + label img {
-    transform: scale(1.5);
-}
 
 #spa {
     direction: rtl;
