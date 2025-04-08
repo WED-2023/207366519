@@ -129,18 +129,14 @@
       </li>
       <li>
         <div class="rating">
-          <input type="radio" name="star" id="star1" checked>
-          <label for="star1">
-            <img src="utils/goodRate_transparent.png" >
-          </label>
-          <input type="radio" name="star" id="star2">
-          <label for="star2">
-            <img src="utils/okRate_transparent.png" >
-          </label>
-          <input type="radio" name="star" id="star3">
-          <label for="star3">
-            <img src="utils/badRate_transparent.png" >
-          </label>
+          <li class="dropdown-rating">
+            <label for="rating-select">How do you feel?</label>
+            <select id="rating-select" name="rating">
+              <option value="happy">🙂 Happy</option>
+              <option value="neutral">🫤 Okay</option>
+              <option value="unhappy">☹️ Unhappy</option>
+            </select>
+          </li>          
         </div>
       </li>
       <li>
